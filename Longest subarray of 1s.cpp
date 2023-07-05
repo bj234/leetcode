@@ -1,6 +1,7 @@
 class Solution {
 public:
     int longestSubarray(vector<int>& nums) {
+        //two pointer
         int i=0,j=0,n=nums.size(),count1=0;
         if(count(nums.begin(),nums.end(),1)==n) return n-1;
         if(nums[0]==1) count1=1;
