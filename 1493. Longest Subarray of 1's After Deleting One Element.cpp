@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool ispossible(vector<int>& nums,int mid){
+        // binary search
         int l=0,r=mid,count1=0;
         for(int i=0;i<=r;i++){
             if(nums[i]==1) count1++;
