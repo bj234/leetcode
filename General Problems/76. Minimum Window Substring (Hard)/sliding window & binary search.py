@@ -4,7 +4,6 @@ class Solution:
     #We only use a dictionary of size max 52
     def minWindow(self, s: str, t: str) -> str:
         tdict=Counter(t)
-        print(tdict)
         def validatedict(d):
             for k in tdict:
                 if d[k]<tdict[k]:return False
